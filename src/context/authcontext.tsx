@@ -1,5 +1,5 @@
 "use client"
-import React, {useContext, useState, useEffect, useRef} from "react";
+import React, {useContext, useState, useEffect} from "react";
 import {
     createUserWithEmailAndPassword, sendEmailVerification,
     signInWithEmailAndPassword as sG,

@@ -39,7 +39,7 @@ export default function SignIn() {
 
     function onSubmit(values: z.infer<typeof formSchema>) {
         const result = signInWithEmailAndPassword(values.email, values.password);
-        result.then((res) => {
+        result.then(() => {
             window.location.href = "/"
         }).catch((err) => {
             alert(err.message)
